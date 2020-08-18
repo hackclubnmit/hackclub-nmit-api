@@ -9,7 +9,7 @@ const { forwardAuthenticated } = require('../config/auth');
 Route.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 
 // Register Page
-Route.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+Route.get('/signup', forwardAuthenticated, (req, res) => res.render('register'));
 Route.post('/signup',
     //validations has to be done.
      userController.Signup
